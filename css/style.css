@@ -10,6 +10,10 @@
     max-width: 100%;
   }
   
+  ul {
+    list-style: none;
+  }
+
 /* COMMON */
 /* Layout */
 .container {
@@ -24,8 +28,8 @@
 /* Utilities */
 
 /* debug */
-.mb-10 {
-    margin-bottom: 10px;
+.mb-20 {
+    margin-bottom: 20px;
 }
 
 /* HEADER */
@@ -43,6 +47,11 @@ main {
     padding: 10px;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 /* title */
 .main-title h4 {
     color: #99a5bf;
@@ -52,13 +61,31 @@ main {
     color: #4e3969;
 }
 
-/* video card */
-.card-video .container {
-    
-
-    /* debug */
-    min-height: 450px;
+.main-title span {
+    display: none;
 }
+
+/* video card */
+.col-video {
+    aspect-ratio: 2;
+}
+
+.col-video,
+.col-text {
+    width: 100%;
+}
+.col-text {
+    padding: 10px
+}
+.col-text h3 {
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.col-text li {
+    padding-bottom: 10px;
+}
+
 /* social */
 .social .container {
 
@@ -79,4 +106,89 @@ footer {
 
     /* debug */
     min-height: 100px;
+}
+
+
+
+/* **************** */
+/**** RESPONSIVE ****/
+/* **************** */
+
+/* Mobile First */
+
+/* 768px */
+@media screen and (min-width: 768px) {
+
+    /* header */
+    header .container {
+        text-align: left;
+    }
+    
+    /* main */
+    /* title */
+    .main-title span {
+        display: inline-block;
+    }
+    
+    .main-title {
+        font-size: 1rem;
+    }
+
+    .main-title h4 {
+        font-size: 0.7rem;
+    }
+
+
+    /* video card */
+    .col-text ul {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .col-text li {
+        width: calc(100% / 3);
+        font-size: 0.7rem;
+    }
+
+
+}
+
+
+/* 992px */
+@media screen and (min-width: 992px) {
+
+    /* header */
+    header .container {
+        width: 100%;
+    }
+
+    /* main */
+    main .main-title, 
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .main-title {
+        font-size: 1.5rem;
+    }
+
+    /* video card */
+    .col-video {
+        width: 70%;
+    }
+
+    .col-text {
+        width: 30%;
+    }
+
+    .col-text ul {
+        row-gap: 3px;
+    }
+
+    .col-text li {
+        width: 100%;
+    }
+
 }
