@@ -85,7 +85,7 @@ iframe {
     width: 100%;
 }
 .col-text {
-    padding: 10px
+    padding: 20px
 }
 .col-text h3 {
     padding-bottom: 25px;
@@ -145,9 +145,24 @@ iframe {
 
 /* presentation */
 .presentation .container {
+    padding-bottom: 20px;
+}
 
-    /* debug */
-    min-height: 600px;
+.presentation hr {
+    width: 70px;
+    color: #ff9614;
+    border: 0.5px solid;
+}
+
+.presentation img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.presentation p {
+    line-height: 1.5rem;
+    padding-top: 10px;
 }
 
 /* FOOTER */
@@ -190,9 +205,6 @@ footer {
 
 
     /* video card */
-    iframe {
-        
-    }
     .col-text ul {
         display: flex;
         flex-wrap: wrap;
@@ -226,6 +238,16 @@ footer {
         display: block;
     }
 
+    /* presentation */
+    .presentation img {
+        float: left;
+        width: 30%;
+        padding-right: 10px;
+    }
+
+    .presentation p {
+        padding-top: 0;
+    }
 
 }
 
