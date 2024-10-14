@@ -5,11 +5,11 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
   }
-  
+
   img {
     max-width: 100%;
   }
-  
+
   ul {
     list-style: none;
   }
@@ -18,16 +18,9 @@
 /* Layout */
 .container {
     width: 100%;
-
-
-    /* debug*/
-    border: 1px solid black;
-
 }
 
 /* Utilities */
-
-/* debug */
 .mb-20 {
     margin-bottom: 20px;
 }
@@ -102,9 +95,6 @@ iframe {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    /* debug */
-    min-height: 50px;
 }
 
 .social .bnt {
@@ -168,9 +158,34 @@ iframe {
 /* FOOTER */
 footer {
     background-color: #7c69a4;
+}
 
-    /* debug */
-    min-height: 100px;
+footer .container {
+    margin: 0 auto;
+    color: antiquewhite;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+footer p {
+    padding-top: 5px;
+}
+
+.link-list {
+    padding: 10px;
+}
+
+.link-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.link-list li {
+    width: calc(90% / 4);
+    padding-top: 10px;
 }
 
 
@@ -188,13 +203,13 @@ footer {
     header .container {
         text-align: left;
     }
-    
+
     /* main */
     /* title */
     .main-title span {
         display: inline-block;
     }
-    
+
     .main-title {
         font-size: 1rem;
     }
@@ -249,6 +264,15 @@ footer {
         padding-top: 0;
     }
 
+    /* footer */
+    footer .container {
+        width: 55%;
+    }
+
+    .link-list ul {
+        flex-wrap: nowrap;
+    }
+
 }
 
 
@@ -265,7 +289,7 @@ footer {
     }
 
     /* main */
-    main .main-title, 
+    main .main-title,
     .container {
         width: 80%;
         margin: 0 auto;
@@ -298,9 +322,25 @@ footer {
     .social .bnt {
         text-align: left;
     }
-    
+
     .social span {
         display: inline-block;
+    }
+
+    /* footer */
+    footer .container {
+        width: 100%;
+        display: flex;
+    }
+
+    .contatti {
+        width: 50%;
+        text-align: left;
+    }
+
+    .link-list {
+        width: 50%;
+        text-align: right;
     }
 
 }
