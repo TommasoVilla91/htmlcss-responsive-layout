@@ -1,0 +1,82 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+/* COMMON */
+/* Layout */
+.container {
+    width: 100%;
+    padding: 10px;
+
+    /* debug*/
+    border: 1px solid black;
+
+}
+
+/* Utilities */
+
+/* debug */
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+/* HEADER */
+header .container {
+    text-align: center;
+}
+.header-title {
+    font-family: "Nerko One", cursive;
+    color: #ff9614;
+}
+
+/* MAIN */
+main {
+    background-color: #f6f5f3;
+    padding: 10px;
+}
+
+/* title */
+.main-title h4 {
+    color: #99a5bf;
+}
+
+.main-title h1 {
+    color: #4e3969;
+}
+
+/* video card */
+.card-video .container {
+    
+
+    /* debug */
+    min-height: 450px;
+}
+/* social */
+.social .container {
+
+    /* debug */
+    min-height: 50px;
+}
+
+/* presentation */
+.presentation .container {
+
+    /* debug */
+    min-height: 600px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #7c69a4;
+
+    /* debug */
+    min-height: 100px;
+}
